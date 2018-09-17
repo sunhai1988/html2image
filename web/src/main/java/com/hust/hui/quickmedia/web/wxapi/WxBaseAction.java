@@ -26,7 +26,7 @@ import java.io.OutputStream;
 @Slf4j
 public class WxBaseAction {
 
-    private static final String HTTP_PREFIX = "https://zbang.online/";
+    private static final String HTTP_PREFIX = "https://html2image.quany.top/";
 
     protected BufferedImage getImg(HttpServletRequest request) {
         MultipartFile file = null;
