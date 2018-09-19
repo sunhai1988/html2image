@@ -35,7 +35,7 @@ public class Html2ImageByJsWrapper {
         dcaps.setJavascriptEnabled(true);
         //驱动支持（第二参数表明的是你的phantomjs引擎所在的路径，which/whereis phantomjs可以查看）
         // fixme 这里写了执行， 可以考虑判断系统是否有安装，并获取对应的路径 or 开放出来指定路径
-        dcaps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, "C:\\var\\local\\bin\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe");
+        dcaps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, "/usr/local/phantomjs/bin/phantomjs");
         //创建无界面浏览器对象
         return new PhantomJSDriver(dcaps);
     }
